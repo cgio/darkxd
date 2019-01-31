@@ -4,6 +4,8 @@
 
 An official dark theme for Adobe XD does not currently exist. Since 2016, the feature request has garnered over [1,300 votes](https://adobexd.uservoice.com/forums/353007-adobe-xd-feature-requests/suggestions/12940362-dark-interface-overall-ui-including-side-panels). Adobe has marked the request as "feature-in-the-backlog."
 
+![Hidden Adobe XD Dark Theme](https://i.imgur.com/iCrtHkU.png)
+
 I pay for a couple of Adobe services. I received an unexpected email from Adobe indicating that I received a one-year license to XD. I decided to try it out. I was disappointed with XD's dark mode omission. Arguably, Sketch (Mac only) is XD's biggest competitor. Sketch has a dark mode. Many of Adobe's other design products do, too. Less light, less eye strain. Fortunately, within a short period of time, I discovered that a hidden dark theme exists and is relatively easy to unlock.
 
 ## Compatibility
