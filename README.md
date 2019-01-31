@@ -12,13 +12,13 @@ I pay for a couple of Adobe services. I received an unexpected email from Adobe 
 
 Tested with: 
 
-* Adobe XD 15.0.12.8 downloaded via Creative Cloud
+* Adobe XD 15.0.12.8 for Windows downloaded via Creative Cloud
 
 ## Requirements
 
 * A decent text editor, such as Sublime Text or Notepad++
 
-## Instructions
+## Instructions (Windows)
 
 **At your own risk,** you can enable the dark theme via the following steps​:​
 
