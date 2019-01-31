@@ -16,7 +16,7 @@ Tested with:
 
 ## Requirements
 
-* A decent text editor, such as Sublime Text or Notepad++
+* A decent text editor (i.e. Sublime Text or Notepad++)
 
 ## Instructions (Windows)
 
@@ -34,16 +34,16 @@ Tested with:
 
 5. Make backups (copies) of all the .xaml files and store them elsewhere, i.e. a desktop or documents folder. You may need to restore the originals later if XD fails to load or your experiments have gone too far.
 6. In the separate folder where your copies are stored, make copies of the copies. You will be editing the `General.xaml `file, so make sure the file you are editing is `General.xaml` (and not `General - Copy.xaml`) from within your personal folder (not a WindowsApps folder). Later, you will be replacing the WindowsApps `General.xaml` with modified `General.xaml` from your personal folder.
-7. Make sure XD is closed. Using your text editor, open the General.xml from your personal folder. As you will see, General.xaml is quite legible, as it is a Microsoft  XML-based language. General.xaml contains an "ADOBE CONFIDENTIAL" notice. Therefore, I have written the remaining instructions accordingly, so pay attention closely. I have to walk the line.
-8. In theory, it would make sense if Adobe constructed separate definitions for light and dark themes within the `General.xaml` file. What would happen if you, for educational purposes, switched the text `"Light"` to `"Dark"` and `"Dark"` to `"Light"`? What would happen if you saved the file? What would happen if you replaced the `General.xaml` in the XD's `Themes` folder with the one you modified? Would Adobe XD have the hidden dark mode enabled?
-9. Remember to apply the restoration .reg file after you are content. Leaving the WindowsApps folder accessible reduces security.
+7. Make sure XD is closed. Using your text editor, open the General.xml from your personal folder. As you will see, General.xaml is quite legible, as it is a Microsoft  XML-based language. General.xaml contains an "ADOBE CONFIDENTIAL" notice. Therefore, I have written the remaining instructions carefully. Pay close attention.
+8. In theory, it would make sense if Adobe constructed separate definitions for light and dark themes within the `General.xaml` file. What if the color settings were defined under a definition of "Light" and "Dark"? What would happen if you, for educational purposes, switched the text (if it exists) from `"Light"` to `"Dark"` and `"Dark"` to `"Light"`? What would happen if you saved the file? What would happen if you replaced the `General.xaml` in the XD's `Themes` folder with the one you modified? Would Adobe XD have the hidden dark mode enabled?
+9. Remember to apply the restoration .reg file after you are content. Leaving the WindowsApps folder accessible reduces system security.
 
-If necessary, revert changes by following the theory in step eight backwards. 
+*If necessary, revert changes by following the theory in step eight backwards. To restore the original `General.xaml`, copy over the backup created in step six above.*
 
 ## Notes
 
-* There are likely other ways to do this and the themes can further be expanded upon, so feel free to experiment. Do not expect the dark mode to apply everywhere. I did all of this all a bit quickly and I am reasonably satisfied with the results. Menu text color may need some adjustments to improve legibility. Use common sense to figure that out.
+* There are likely other ways to do this. Themes can further be further adjusted, so feel free to experiment. Do not expect the dark mode to apply everywhere, as some of Adobe XD's UI areas are apparently off-limits or unsupported. I did all of this all a bit quickly and I am reasonably satisfied with the results. Menu text color may need some adjustments to improve legibility. Use common sense to figure that out.
 
-* You can figure out the hexadecimal color of Adobe UI components by taking a screenshot and pasting the screenshot into XD or other capable image software. An eyedropper tool may show you the hex color code. PicPick's Color Picker also works. The hex format Adobe uses is relatively self-explanatory. Hint: remember that graphic/web design often involves a hex alpha value in addition to hex color values.
+* You can figure out the hexadecimal color of Adobe UI components by taking a screenshot and pasting the screenshot into XD or other capable image software. An eyedropper tool may show you the hex color code. PicPick's Color Picker also works. The hex format Adobe uses is relatively self-explanatory. Hint: remember that graphic/web design often involves a hex alpha value in addition to hex color values. Get the color values Photoshop uses and adapt your dark XD theme accordingly.
 
 * Be wary of Adobe and the confidentiality terms, though it would look bad upon Adobe for pursuing users who want better eye health. Also, Adobe is looking to increase user adoption, as per the email one-year XD access promotion I received.
