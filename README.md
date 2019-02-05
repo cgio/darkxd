@@ -4,9 +4,9 @@
 
 An official dark theme for Adobe XD does not currently exist. Since 2016, the feature request has garnered over [1,300 votes](https://adobexd.uservoice.com/forums/353007-adobe-xd-feature-requests/suggestions/12940362-dark-interface-overall-ui-including-side-panels). Adobe has marked the request as "feature-in-the-backlog."
 
-![Hidden Adobe XD Dark Theme](https://i.imgur.com/iCrtHkU.png)
+On Windows, Adobe XD is a UWP app. Therefore, we can build on top of the "built-in" dark theme, although it is not officially supported. Read more about [UWP and colors here](https://docs.microsoft.com/en-us/windows/uwp/design/style/color). 
 
-I pay for a couple of Adobe services. I received an unexpected email from Adobe indicating that I received a one-year license to XD. I decided to try it out. I was disappointed with XD's dark mode omission. Arguably, Sketch (Mac only) is XD's biggest competitor. Sketch has a dark mode. Many of Adobe's other design products do, too. Less light, less eye strain. Fortunately, within a short period of time, I discovered that a hidden dark theme exists and is relatively easy to unlock.
+![Adobe XD Dark Theme](https://i.imgur.com/MzGZA4f.png)
 
 ## Compatibility
 
@@ -22,28 +22,22 @@ Tested with:
 
 **At your own risk,** you can enable the dark theme via the following steps​:​
 
-1. Note that XD is installed as a Windows App; not a traditional desktop application. Special access is needed for working with XD files within the `WindowsApps` folder (default path: `C:\Program Files\WindowsApps`). To enable access, we will use a registry modification (via a .reg file). The modification's author is Shawn Brink. You may download the modification from this page: https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html
-2. Refer to Shawn's instructions. Double-click the appropriate .reg file to enable `WindowsApps` access. Note that a separate .reg file restores prior settings. You can use that file later once all the steps are done.
-3. Assuming you now have access to WindowsApps and the directory's subfolders, navigate to the folder that begins with `Adobe.CC.XD`. Navigate one step further into the Themes folder.
-4. The themes folder should contain several files. My folder contains the following: 
-   * `General.xaml`
-   * `SpectrumBrushes.xaml`
-   * `SpectrumTheme.xaml`
-   * `SpectrumThemeDark.xaml`
-   * `SpectrumThemeLight.xaml`
+1. Because XD is installed as a Windows App (not a traditional desktop application), we need to enable access to XD's files within the `WindowsApps` folder (default path: `C:\Program Files\WindowsApps`). To enable access, we will use a registry modification (via a .reg file). The modification's author is Shawn Brink. You may download the modification from this page: https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html
+2. Follow Shawn's instructions. Double-click the appropriate .reg file to enable access and the "Take Ownership" right-click shell extension. 
+3. Navigate to `C:\Program Files\WindowsApps`.  Find the folder that begins with `Adobe.CC.XD`. Inside, find the the `Themes` folder.
+4. The themes folder should contain several files. One of those files should be `General.xaml`. Right-click `General.xaml` and click "Take Ownership." Next, make a backup (a copy) of `General.xaml` and store the backup elsewhere (i.e. a desktop or documents folder). *If you want to switch back to the light theme later, you will need to restore the original `General.xaml` file.*
 
-5. Make backups (copies) of all the .xaml files and store them elsewhere, i.e. a desktop or documents folder. You may need to restore the originals later if XD fails to load or your experiments have gone too far.
-6. In the separate folder where your copies are stored, make copies of the copies. You will be editing the `General.xaml `file, so make sure the file you are editing is `General.xaml` (and not `General - Copy.xaml`) from within your personal folder (not a WindowsApps folder). Later, you will be replacing the WindowsApps `General.xaml` with modified `General.xaml` from your personal folder.
-7. Make sure XD is closed. Using your text editor, open the General.xml from your personal folder. As you will see, General.xaml is quite legible, as it is a Microsoft  XML-based language. General.xaml contains an "ADOBE CONFIDENTIAL" notice. Therefore, I have written the remaining instructions carefully. Pay close attention.
-8. In theory, it would make sense if Adobe constructed separate definitions for light and dark themes within the `General.xaml` file. What if the color settings were defined under a definition of "Light" and "Dark"? What would happen if you, for educational purposes, switched the text (if it exists) from `"Light"` to `"Dark"` and `"Dark"` to `"Light"`? What would happen if you saved the file? What would happen if you replaced the `General.xaml` in the XD's `Themes` folder with the one you modified? Would Adobe XD have the hidden dark mode enabled?
-9. Remember to apply the restoration .reg file after you are content. Leaving the WindowsApps folder accessible reduces system security.
+5. Download the dark theme `General.xaml` [from this link](https://www.dropbox.com/s/yl06r2w6dah5to9/General.zip?dl=0). If needed, extract the `General.xaml` file.
+6. Copy the "dark" `General.xaml` into XD's `Themes` folder, thereby replacing the original.
 
-*If necessary, revert changes by following the theory in step eight backwards. To restore the original `General.xaml`, copy over the backup created in step six above.*
+The dark theme should now be installed. You can now launch Adobe XD. Note that the first screen will be light. Beyond that, the XD interface will be dark. 
+
+In creating the dark theme, I noticed that some areas were off-limits (e.g. the white slide out area surrounding the menu button, the color picker background, etc.).
+
+*Remember to apply the restoration .reg file after you are content. Leaving the WindowsApps folder accessible reduces system security.*
 
 ## Notes
 
-* There are likely other ways to do this. Themes can further be further adjusted, so feel free to experiment. Do not expect the dark mode to apply everywhere, as some of Adobe XD's UI areas are apparently off-limits or unsupported. I did all of this all a bit quickly and I am reasonably satisfied with the results. Menu text color may need some adjustments to improve legibility. Use common sense to figure that out.
+* If you want to edit `General.xaml` yourself, you can figure out the hexadecimal color of Adobe UI components by taking a screenshot and pasting the screenshot into XD or other capable image software. An eyedropper tool may show you the hex color code. PicPick's Color Picker is effective.
 
-* You can figure out the hexadecimal color of Adobe UI components by taking a screenshot and pasting the screenshot into XD or other capable image software. An eyedropper tool may show you the hex color code. PicPick's Color Picker also works. The hex format Adobe uses is relatively self-explanatory. Hint: remember that graphic/web design often involves a hex alpha value in addition to hex color values. Get the color values Photoshop uses and adapt your dark XD theme accordingly.
-
-* Be wary of Adobe and the confidentiality terms, though it would look bad upon Adobe for pursuing users who want better eye health. Also, Adobe is looking to increase user adoption, as per the email one-year XD access promotion I received.
+* Be wary of Adobe's terms, though it would look bad upon Adobe for pursuing users who seek better eye via an edited plaintext file.
