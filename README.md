@@ -40,4 +40,4 @@ In creating the dark theme, I noticed that some areas were off-limits (e.g. the 
 
 * If you want to edit `General.xaml` yourself, you can figure out the hexadecimal color of Adobe UI components by taking a screenshot and pasting the screenshot into XD or other capable image software. An eyedropper tool may show you the hex color code. PicPick's Color Picker is effective.
 
-* Be wary of Adobe's terms, though it would look bad upon Adobe for pursuing users who seek better eye via an edited plaintext file.
+* Be wary of Adobe's terms, though it would look bad upon Adobe for pursuing users who seek better eye health via an edited plaintext file.
