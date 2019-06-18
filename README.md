@@ -2,9 +2,9 @@
 
 ## Background
 
-An official dark theme for Adobe XD does not currently exist. Since 2016, the feature request has garnered over [1,300 votes](https://adobexd.uservoice.com/forums/353007-adobe-xd-feature-requests/suggestions/12940362-dark-interface-overall-ui-including-side-panels). Adobe has marked the request as "feature-in-the-backlog."
+An official dark theme for Adobe XD does not currently exist. Since 2016, the feature request has garnered over [1,800 votes](https://adobexd.uservoice.com/forums/353007-adobe-xd-feature-requests/suggestions/12940362-dark-interface-overall-ui-including-side-panels). Adobe marked the request as "feature-in-the-backlog" in 2016.
 
-On Windows, Adobe XD is a UWP app. Therefore, we can build on top of the "built-in" dark theme, although it is not officially supported. Read more about [UWP and colors here](https://docs.microsoft.com/en-us/windows/uwp/design/style/color). 
+On Windows, Adobe XD is a UWP app. Therefore, we can build on top of the "built-in" and unofficial dark theme. Read more about [UWP and colors here](https://docs.microsoft.com/en-us/windows/uwp/design/style/color). 
 
 ![Adobe XD Dark Theme](https://i.imgur.com/MzGZA4f.png)
 
@@ -12,7 +12,8 @@ On Windows, Adobe XD is a UWP app. Therefore, we can build on top of the "built-
 
 Tested with: 
 
-* Adobe XD 15.0.12.8 for Windows downloaded via Creative Cloud
+* Adobe XD 19.2.22.3 for Windows downloaded via Creative Cloud
+* Adobe XD 15.0.12.8 for Windows downloaded via Creative Cloud (old version, no longer supported)
 
 ## Requirements
 
@@ -20,7 +21,7 @@ Tested with:
 
 ## Instructions (Windows)
 
-**At your own risk,** you can enable the dark theme via the following steps​:​
+**At your own risk,** you can enable the dark theme via the following steps:
 
 1. Because XD is installed as a Windows App (not a traditional desktop application), we need to enable access to XD's files within the `WindowsApps` folder (default path: `C:\Program Files\WindowsApps`). To enable access, we will use a registry modification (via a .reg file). The modification's author is Shawn Brink. You may download the modification from this page: https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html
 2. Follow Shawn's instructions. Double-click the appropriate .reg file to enable access and the "Take Ownership" right-click shell extension. 
@@ -38,6 +39,6 @@ In creating the dark theme, I noticed that some areas were off-limits (e.g. the 
 
 ## Notes
 
-* If you want to edit `General.xaml` yourself, you can figure out the hexadecimal color of Adobe UI components by taking a screenshot and pasting the screenshot into XD or other capable image software. An eyedropper tool may show you the hex color code. PicPick's Color Picker is effective.
+* If you want to edit `General.xaml` yourself, you can determine Adobe UI component hexadecimal colors by taking a screenshot and pasting the screenshot into XD or other capable image software. An eyedropper tool should show you the color code. Alternatively, an app like PicPick is effective.
 
-* Be wary of Adobe's terms, though it would look bad upon Adobe for pursuing users who seek better eye health via an edited plaintext file.
+* Be wary of Adobe's terms, although Adobe may want to avoid punishing users who seek better eye health.
