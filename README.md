@@ -12,8 +12,9 @@ On Windows, Adobe XD is a Universal Windows Platform (UWP) app. Therefore, we ca
 
 Tested with: 
 
+* Adobe XD 27.0.12.7 for Windows downloaded via Creative Cloud
+  * Note: If you want to help, see if you can find the `General.xaml` color settings for: the line that appears under "Component" and related State rows (#E0F0FA), white dialog boxes, white instructional popups, the canvas area, etc.  Some of these UI components are entirely inaccessible via General.xaml modifications; i.e. .png image files such as SP_Switch_Sm_D.scale-400.png.
 * Adobe XD 25.3.12.1 for Windows downloaded via Creative Cloud
-  * Note: If you want to help, see if you can find the `General.xaml` color settings for: the line that appears under "Component" and related State rows (#E0F0FA), white dialog boxes, white instructional popups, the canvas area, the responsive size toggle button, etc.  (Some of these UI components may actually be entirely inaccessible via General.xaml modifications.)
 * Adobe XD 19.2.22.3 for Windows downloaded via Creative Cloud (old version; no longer supported)
 * Adobe XD 15.0.12.8 for Windows downloaded via Creative Cloud (old version; no longer supported)
 
@@ -30,7 +31,7 @@ Tested with:
 2. Follow Shawn's instructions. Double-click the appropriate .reg file to enable access and the "Take Ownership" right-click shell extension. 
 3. Navigate to `C:\Program Files\WindowsApps`.  Find the folder that begins with `Adobe.CC.XD`. Inside, find the the `Themes` folder.
 4. The themes folder should contain several files. One of those files should be `General.xaml`. Right-click `General.xaml` and click "Take Ownership." Next, make a backup (a copy) of `General.xaml` and store the backup elsewhere (i.e. a Desktop or Documents folder). *If you want to switch back to the light theme later, you will need to restore the original `General.xaml` file.*
-5. Download the unofficial dark theme `General.xaml` from https://www.dropbox.com/s/3nd9jtvqr9rcgtw/General.zip?dl=0. If needed, extract the `General.xaml` file.
+5. Download this project's unofficial dark theme `General.xaml` from https://www.dropbox.com/s/3nd9jtvqr9rcgtw/General.zip?dl=0. If needed, extract the `General.xaml` file.
 6. Copy the "dark" `General.xaml` into XD's `Themes` folder, thereby replacing the original.
 
 The dark theme should now be installed. You can now launch Adobe XD. Note that the first screen will be light. Beyond that, a significant portion of the XD interface will be dark. 
