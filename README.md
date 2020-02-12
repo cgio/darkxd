@@ -14,7 +14,7 @@ Tested with:
 
 * Adobe XD 27.0.12.7 for Windows downloaded via Creative Cloud
   * Note: If you want to help, see if you can find the `General.xaml` color settings for: the line that appears under "Component" and related State rows (#E0F0FA), white dialog boxes, white instructional popups, the canvas area, etc.  Some of these UI components are entirely inaccessible via General.xaml modifications; i.e. .png image files such as SP_Switch_Sm_D.scale-400.png.
-* Adobe XD 25.3.12.1 for Windows downloaded via Creative Cloud
+* Adobe XD 25.3.12.1 for Windows downloaded via Creative Cloud (old version; no longer supported)
 * Adobe XD 19.2.22.3 for Windows downloaded via Creative Cloud (old version; no longer supported)
 * Adobe XD 15.0.12.8 for Windows downloaded via Creative Cloud (old version; no longer supported)
 
