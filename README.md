@@ -12,8 +12,9 @@ On Windows, Adobe XD is a Universal Windows Platform (UWP) app. Therefore, we ca
 
 Tested with: 
 
-* Adobe XD 27.0.12.7 for Windows downloaded via Creative Cloud
-  * Note: If you want to help, see if you can find the `General.xaml` color settings for: the line that appears under "Component" and related State rows (#E0F0FA), white dialog boxes, white instructional popups, the canvas area, etc.  Some of these UI components are entirely inaccessible via `General.xaml` modifications; i.e. .png image files such as `SP_Switch_Sm_D.scale-400.png`.
+* Adobe XD 31.1.12.13 for Windows downloaded via Creative Cloud
+	* Note: If you want to help, see if you can find the `General.xaml` color settings for: the line that appears under "Component" and related State rows (#E0F0FA), white dialog boxes, white instructional popups, the canvas area, etc.  Some of these UI components are entirely inaccessible via `General.xaml` modifications; i.e. .png image files such as `SP_Switch_Sm_D.scale-400.png`.
+* Adobe XD 27.0.12.7 for Windows downloaded via Creative Cloud (old version; no longer supported)
 * Adobe XD 25.3.12.1 for Windows downloaded via Creative Cloud (old version; no longer supported)
 * Adobe XD 19.2.22.3 for Windows downloaded via Creative Cloud (old version; no longer supported)
 * Adobe XD 15.0.12.8 for Windows downloaded via Creative Cloud (old version; no longer supported)
@@ -27,7 +28,7 @@ Tested with:
 
 **At your own risk,** you can enable the dark theme via the following steps:
 
-1. Because XD is installed as a Windows App (not a traditional desktop application), we need to enable access to XD's files within the `WindowsApps` folder (default path: `C:\Program Files\WindowsApps`). To enable access, we will modify the Windows Registry via a .reg file. The .reg file's  is Shawn Brink. You may download the modification from this page: https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html. Here is a direct link to the .reg file: https://www.tenforums.com/attachments/tutorials/247900d1568820808-add-take-ownership-context-menu-windows-10-a-add_take_ownership_to_context_menu.reg.
+1. Because XD is installed as a Windows App (not a traditional desktop application), we need to enable access to XD's files within the `WindowsApps` folder (default path: `C:\Program Files\WindowsApps`). To enable access, we will modify the Windows Registry via a .reg file. The .reg file's author is Shawn Brink. You may download the modification from this page: https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html. Here is a direct link to the .reg file: https://www.tenforums.com/attachments/tutorials/247900d1568820808-add-take-ownership-context-menu-windows-10-a-add_take_ownership_to_context_menu.reg.
 2. Follow Shawn's instructions. Double-click the appropriate .reg file to enable access and the "Take Ownership" right-click shell extension. 
 3. Navigate to `C:\Program Files\WindowsApps`.  Find the folder that begins with `Adobe.CC.XD`. Inside, find the the `Themes` folder.
 4. The themes folder should contain several files. One of those files should be `General.xaml`. Right-click `General.xaml` and click "Take Ownership." Next, make a backup (a copy) of `General.xaml` and store the backup elsewhere (i.e. a Desktop or Documents folder). *If you want to switch back to the light theme later, you will need to restore the original `General.xaml` file.*
