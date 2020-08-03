@@ -2,7 +2,7 @@
 
 ## Background
 
-An official dark theme for Adobe XD does not currently exist. Since 2016, the feature request has garnered over [1,800 votes](https://adobexd.uservoice.com/forums/353007-adobe-xd-feature-requests/suggestions/12940362-dark-interface-overall-ui-including-side-panels). Adobe marked the request as "feature-in-the-backlog" in 2016.
+An official dark theme for Adobe XD does not currently exist. Since 2016, the feature request has garnered over [3,500 votes](https://adobexd.uservoice.com/forums/353007-adobe-xd-feature-requests/suggestions/12940362-dark-interface-overall-ui-including-side-panels). Adobe marked the request as "feature-in-the-backlog" in 2016.
 
 On Windows, Adobe XD is a Universal Windows Platform (UWP) app. Therefore, we can build on top of the "built-in" and unofficial dark theme. Read more about [UWP and colors here](https://docs.microsoft.com/en-us/windows/uwp/design/style/color). 
 
