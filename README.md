@@ -30,7 +30,7 @@ Tested with:
 
 1. Because XD is installed as a Windows App (not a traditional desktop application), we need to enable access to XD's files within the `WindowsApps` folder (default path: `C:\Program Files\WindowsApps`). To enable access, we will modify the Windows Registry via a .reg file. The .reg file's author is Shawn Brink. You may download the modification from this page: https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html. Here is a direct link to the .reg file: https://www.tenforums.com/attachments/tutorials/247900d1568820808-add-take-ownership-context-menu-windows-10-a-add_take_ownership_to_context_menu.reg.
 2. Follow Shawn's instructions. Double-click the appropriate .reg file to enable access and the "Take Ownership" right-click shell extension. 
-3. Navigate to `C:\Program Files\WindowsApps`.  Find the folder that begins with `Adobe.CC.XD`. Inside, find the the `Themes` folder.
+3. Navigate to `C:\Program Files\WindowsApps`.  Find the folder that begins with `Adobe.CC.XD`. Inside, find the `Themes` folder.
 4. The themes folder should contain several files. One of those files should be `General.xaml`. Right-click `General.xaml` and click "Take Ownership." Next, make a backup (a copy) of `General.xaml` and store the backup elsewhere (i.e. a Desktop or Documents folder). *If you want to switch back to the light theme later, you will need to restore the original `General.xaml` file.*
 5. Download this project's unofficial dark theme `General.xaml` from https://www.dropbox.com/s/usdsks0mx1lvzin/General.zip?dl=0. If needed, extract the `General.xaml` file.
 6. Copy the "dark" `General.xaml` into XD's `Themes` folder, thereby replacing the original.
